@@ -19,10 +19,7 @@ body {
 
 .container {
   display: flex;
-  /* flex-direction: column; */
-  /* width: 30%; */
   font-family: "Hansen-Grotesk", monospace;
-  gap: 16px;
   border-radius: 24px;
   box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.29);
   -webkit-box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.29);
@@ -88,4 +85,91 @@ body {
   font-size: 0.9rem;
   opacity: 0.7;
   width: 200px;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  gap: 20px;
+  color: hsl(224, 30%, 27%);
+}
+
+.summary .exams {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.summary .exams .exam {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1 0 auto;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.summary .exams .exam:nth-child(1) {
+  color: hsl(0, 100%, 67%);
+  background-color: hsl(0, 100%, 67%, 0.1);
+}
+
+.summary .exams .exam:nth-child(2) {
+  color: hsl(39, 100%, 56%);
+  background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+.summary .exams .exam:nth-child(3) {
+  color: hsl(166, 100%, 37%);
+  background-color: hsl(166, 100%, 37%, 0.1);
+}
+
+.summary .exams .exam:nth-child(4) {
+  color: hsl(234, 85%, 45%);
+  background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+.summary .exams .exam img {
+  margin-right: 12px;
+}
+
+.summary .exams .exam .subject {
+  text-align: left;
+  margin-right: 60px;
+}
+
+.summary .exams .exam .score {
+  color: hsl(224, 30%, 27%);
+  margin-left: auto;
+}
+
+.summary .exams .exam .score .bold {
+  font-weight: 800;
+}
+
+.summary button {
+  outline: 0;
+  border: 0;
+  font-family: "Hansen-Grotesk", monospace;
+  font-weight: 500;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  padding: 12px;
+  border-radius: 24px;
+  cursor: pointer;
+
+  &:hover {
+    background-image: linear-gradient(
+    0deg,
+    hsl(241deg 81% 54%) 0%,
+    hsl(243deg 85% 57%) 20%,
+    hsl(245deg 88% 59%) 40%,
+    hsl(247deg 93% 62%) 60%,
+    hsl(250deg 97% 65%) 80%,
+    hsl(252deg 100% 67%) 100%
+  );
+  }
 }
