@@ -72,6 +72,7 @@ body {
 
 .result .total-score .score-large {
   font-size: 3rem;
+  font-weight: 800;
 }
 
 .result .total-score .score-small {
@@ -171,5 +172,28 @@ body {
     hsl(250deg 97% 65%) 80%,
     hsl(252deg 100% 67%) 100%
   );
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    height: auto;
+  }
+  .container {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0 0 24px 24px;
+  }
+  .result {
+    border-radius: 0 0 inherit inherit;
+  }
+  .rank {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  html {
+    font-size: 12px;
   }
 }
