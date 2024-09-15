@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Hansen-Grotesk";
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  border: 2px solid black;
+  width: 30%;
+  font-family: "Hansen-Grotesk", monospace;
+}
